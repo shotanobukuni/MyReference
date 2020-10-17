@@ -31,8 +31,8 @@ WORK_DIR=$(cd $(dirname $0); pwd)
 ```
 # mkdirが成功ならexit 0で終了
 mkdir WORK_DIR && exit 0
-# mkdirが成功ならexit 1で終了
-mkdir WORK_DIR || exit 0
+# mkdirが失敗ならexit 1で終了
+mkdir WORK_DIR || exit 1
 ```
 
 * ファイルの行数判定
